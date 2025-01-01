@@ -8,6 +8,4 @@ export const LocationStates = {
 export interface Location {
   title: string;
   postal_address: string;
-
-  state: LocationState;
 }
