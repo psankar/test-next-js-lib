@@ -1,9 +1,7 @@
-export type LocationState = "ACTIVE_LOCATION" | "DEFUNCT_LOCATION";
-
-export const LocationStates = {
-  ACTIVE: "ACTIVE_LOCATION" as LocationState,
-  DEFUNCT: "DEFUNCT_LOCATION" as LocationState,
-} as const;
+export enum LocationState {
+  ACTIVE = "ACTIVE_LOCATION",
+  DEFUNCT = "DEFUNCT_LOCATION",
+}
 
 export interface Location {
   title: string;
